@@ -1,9 +1,11 @@
 h1{
 	color:red;
+	font-family: Courier New;
 }
 
 p{
 	color:#9B2B3F;
+	font-family: Times New Roman;
 }
 strong{
 color:blue;
@@ -15,4 +17,5 @@ em {
 li{
 	color:#F3F781;
 	background:#5D5959;
+	font-family:Arial;
 }
