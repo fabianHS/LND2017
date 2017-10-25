@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend align="leght">Informacion Personal</legend>
+				Apellido: <input type="text" name="apellido">
+				<br>
+				Nombre:   <input type="text" name="nombre">
+				<br>
+				Direccion: <input type="text" name="direccion">
+				<br>
+			</fieldset>
+
+			<br>
+
+			<fieldset>
+				<legend align="leght">Sistemas Operativo</legend> 
+				<select>
+				<option value=cpu>GNU/Linux
+				<option value=impresora>Windows 10
+				</select>
+			</fieldset>
+			       
+			<br>
+			       
+			<fieldset>
+				<legend align="leght">Descripción del problema</legend>
+				<p>¿Tienes ordenador en casa?<br>
+				<input type="radio" name="iq" value="si"><label>Si</label><br>
+				<input type="radio" name="iq" value="no"><label>No</label><br></p>
+				<p>Si tienes ordenador describe sus caracteristicas principales:<br>
+				<textarea cols="55" rows="8" name="descripcion"></textarea></p>
+                
+                <p><input type="submit" value="Enviar">
+                <input type="reset" value="Borrar"></p>
+			</fieldset> 
+		</form>
+	</body>
+</html>
