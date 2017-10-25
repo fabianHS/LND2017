@@ -1,0 +1,29 @@
+div{
+	margin: .4em 0;
+
+}
+
+div label {
+	width:25%;
+	float: left;
+	
+}
+
+fieldset{
+	border-color: #E9FF00 ;
+	border-style: solid ;
+	border-width:10px;
+    background: #FAFFDC;
+}
+
+label:hover{
+	font-size: 30px;
+}
+
+.rojo{
+	background:#FF0000;
+}
+
+.azul{
+	background:#7500FF;
+}

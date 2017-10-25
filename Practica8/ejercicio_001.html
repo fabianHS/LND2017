@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="javaScript.js"></script>
+	<title>Ejercicio 8</title>
+</head>
+<body>
+
+	<form>
+		<h1>Por favor, introduce tus datos.</h1>
+		<fieldset>
+			<legend>Tu cara </legend>
+				<div>
+					<label>Foto</label> 
+					<input type="file" name="" required=""> </p><br>
+					<label> Previsualizacion de imagen:</label><img src="" id="preview" >
+				</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Datos Generales</legend>
+				<div>
+					<label >Nombre: </label><input type="text" name="nombre" required=""><br>
+					<label>Genero:</label>
+					<input type="radio" required="" >Hombre 
+					<input type="radio"  required="">Mujer <br>
+					<label>Edad:</label><input type="number" name="Edad" min="0" max="100"><br>
+					<label>Fecha: </label><input type="date" name="fecha"><br>
+					<label>Color Favorito:</label> <input type="color" name="color"><br>
+					<label>Pais </label>
+					<select>
+						<option value="" selected="selected">Selecciona</option>
+						<option value="espana">Espana</option>
+						<option value="fracia">Fracia</option>
+						<option value="Alemania">Alemania</option>
+						<option value="Rumania">Rumania</option>
+					</select>
+				</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Otras Caracteristicas</legend>
+			<div>
+				<label>Altura:</label> <span class="rojo"> Bajo</span> <input type="range" name=""> <span class="azul"> Alto </span> <br>
+				<label>Salario:</label> <span class="rojo"> Pobre</span> <input type="range" name=""> <span class="azul"> Rico </span> <br>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Informacion de contacto</legend>
+				<div>
+					<label>Email: </label><input type="email" name="email" required=""><br>
+					<label>Movil </label><input type="number" name="telefono"><br>
+					<label>Direccion: </label><textarea rols="10" cols="30"></textarea><br>
+					<label>Metodo de contacto:</label>
+					<input name="Email" type="checkbox" value="direccion"/> Email
+					<input name="Whatsapp" type="checkbox" value="tecnico"/> Whatsapp
+					<input name="Skype" type="checkbox" value="empleado"/> Skype
+				</div>
+		</fieldset>
+
+		<br><input type="submit" value="Enviar" />
+		
+	</form>
+</body>
+</html>
