@@ -25,7 +25,7 @@ body {
 
 /*tablet*/
 
-@media screen and (min-width:768px) and (max-width:900px){
+@media screen and (min-width:768px) and (max-width:991px){
     .content1, .content2{
         width: 50%;
     }
