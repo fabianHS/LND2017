@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 3</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <style>
+        p > a {
+            color: red;
+        }
+       
+            
+    </style>
+</head>
+<body>
+    
+    <h1>Ejercicio 3</h1>
+    A partir de la siguiente regla CSS:
+
+<p>p > a { color: red; }</p>
+
+Y el siguiente código HTML:
+
+<xmp><p><a href="#">Enlace1</a></p>
+<p><span><a href="#">Enlace2</a></span></p>
+<p><a href="#"><span>Texto2</span></a></p></xmp>
+    
+    <p><a href="#">Enlace1</a></p>
+<p><span><a href="#">Enlace2</a></span></p>
+<p><a href="#"><span>Texto2</span></a></p>
+
+Explica la salida por pantalla. 
+    
+    <blockquote> 
+    Para que se aplique la regla del css los elementos "a" tiene que ser hijos directos de "p".
+   <br>
+    Si ponemos un "span" entre el "p" y "a" ejemplo<xmp><p><span><a></a></span></p></xmp> no se cumple la regla del css por "a" no se hijo de "p".
+    </blockquote>
+    ¿Cuáles son las diferencias con el selector de la pregunta anterior?
+    <blockquote>
+        
+        En la pregunta anterior no tiene una regla que tiene que seguir  obligatoriamente, solo tiene seguir  que si hay una "a" detro  de "p" (aunque hay algun "span" en el medio ) 
+    </blockquote>
+
+</body>
+</html>
