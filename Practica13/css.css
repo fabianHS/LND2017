@@ -1,0 +1,70 @@
+.todo {
+    display: flex;
+    margin: 0 auto;
+    background: gray;
+    max-width: 800px;
+    padding: 10px;
+}
+
+.cotent1 {
+    background: yellow;
+    height: 250px;
+    flex-basis: 20%;    
+    
+}
+
+.contentcenter {
+    flex-basis: 60%;   
+    height: 250px;
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: space-around; 
+
+}
+
+.cotent2 {
+    
+    background: green;
+     flex-basis:  30%;   
+    height: 115px;
+    
+}
+
+.cotent3 {
+    
+    background-color: orange;
+    flex-basis: 30%; 
+    height: 115px;
+}
+
+.cotent4 {
+    
+    background-color: blue;
+    flex-basis: 30%;   
+    height: 115px;
+}
+
+.cotent6 {    
+    
+    flex-basis: 30%;  
+    background-color: darkorange;
+    height: 115px;
+ 
+}
+
+.cotent7 {
+    flex-basis:  63%; 
+    background-color: yellow;
+    height: 115px;
+
+}
+
+
+/*Fin del contenedor del centro. */
+.cotent5 {
+    
+    background-color:violet;
+    flex-basis: 20%;  
+    height: 250px;
+
+}
