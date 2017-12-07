@@ -1,0 +1,261 @@
+body {
+	background: #212121;
+	font-size:22px;
+	height: 32px;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	}
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	color: #FFF;
+    margin-top: 50px;
+	height: 70px;
+}	
+
+a {
+	color: #FFF;
+}
+
+p {
+	text-align: center;
+    margin-top:35px;
+    
+}
+
+.box{
+    border: 1px solid black;
+    background: #999999;
+    margin:2px;
+    padding: 15px;
+    
+}
+
+.titulo{
+    margin-top: -15px;
+    margin-right: -15px;
+    float:right;
+    background: red;
+    border:1px solid black;
+    width: 90px;
+    padding: 10px;
+    
+}
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+nav { 
+	margin:0;
+	padding: 0;
+	background-color: red;
+}
+
+#logo {
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size:40px;
+	line-height: 60px;
+}
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	float: left;
+	background-color: red;
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: #000000; }
+
+/* Background color change on Hover */
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 60px; 
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	left:170px; 
+}
+
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+.todo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    margin-top:50px;
+    
+}
+
+.content1, .content2, .content3{
+    width: 33%;
+    
+}
+
+
+@media screen and (min-width:768px) and (max-width:900px){
+    .content1, .content2{
+        width: 50%;
+    }
+    
+    .content3{
+        width: 100%;
+        
+    }
+}
+
+@media all and (max-width : 768px) {
+	.content3, .content2, .content1{
+        width: 100%;
+        
+    }
+
+	#logo {
+		display: flex;
+		padding: 0;
+		width: 50%;
+		text-align: left;
+		float:left;
+        
+	}
+
+	nav {
+		margin: 0;
+	}
+
+
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+
+	.toggle {
+		display:inline;
+		background-color: red;
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+        float: right
+	}
+
+	.toggle:hover {
+		background-color: #000000;
+	}
+
+	[id^=drop]:checked + ul {
+		display: block;
+        float:left;
+        width: 100%;
+	}
+	nav ul li {
+		display: block;
+		width: 20%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #000000;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121; 
+	}
+
+	
+		
+	}
+		
+	
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		
+
+	}
+
+}
+
