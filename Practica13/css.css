@@ -1,15 +1,17 @@
 .todo {
+    width: 800px;
+    background: gray;
     display: flex;
     margin: 0 auto;
-    background: gray;
-    max-width: 800px;
     padding: 10px;
 }
 
 .cotent1 {
-    background: yellow;
+    width: 20%; 
     height: 250px;
-    widht: 20%;    
+    background: yellow;
+    
+       
     
 }
 
@@ -23,38 +25,50 @@
 }
 
 .cotent2 {
-    
-    background: green;
-     width:  30%;   
+    width:  30%;   
     height: 115px;
+    background: green;
+     
     
 }
 
 .cotent3 {
-    
-    background-color: orange;
     width: 30%; 
     height: 115px;
+    background-color: orange;
+    
 }
 
 .cotent4 {
-    
-    background-color: blue;
     width: 30%;   
     height: 115px;
+    background-color: blue;
+    
 }
 
 .cotent6 {    
     
-    width: 30%;  
-    background-color: darkorange;
+    width: 30%; 
     height: 115px;
+    background-color: darkorange;
+    
  
 }
 
 .cotent7 {
     width:  63%; 
-    background-color: yellow;
     height: 115px;
+    background-color: yellow;
+    
+
+}
+
+
+/*Fin del contenedor del centro. */
+.cotent5 {
+     width: 20%;  
+    height: 250px;
+    background-color:violet;
+   
 
 }
