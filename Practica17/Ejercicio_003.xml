@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title>Pagina Fabian</title>
+		<link>https://fabianhs.github.io/LND2017/</link>
+		<description>Esta pagina es de Fabian.</description>
+		<language>es-es</language>
+		<category>noticias educativas</category>
+		
+		<item>
+			<title>Formación Profesional, una asignatura pendiente de Educación</title>
+			<link>https://elpais.com/ccaa/2017/12/05/andalucia/1512480019_565932.html</link>
+			<description>La Junta aprueba el proyecto de ley para elevar la cualificación y potenciar la empleabilidad</description>
+			<author>fabian@dd.com(Fabian)</author>
+		</item>
+		
+	</channel>
+	</rss>
+	
