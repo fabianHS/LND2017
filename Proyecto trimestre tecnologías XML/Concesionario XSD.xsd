@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="marca">
+  <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="([a-z A-Z]*)"/>
+        <xs:minLength value="4"/>
+        <xs:maxLength value="30"/>
+      </xs:restriction>
+     </xs:simpleType>
+</xs:element>
+
+  <xs:element name="modelo" >
+  <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="([a-z A-Z]*)"/>
+        <xs:minLength value="4"/>
+        <xs:maxLength value="30"/>
+      </xs:restriction>
+     </xs:simpleType>
+</xs:element>
+  
+  <xs:element name="matricula">
+  <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="([a-z A-Z 0-9]*)"/>
+        <xs:minLength value="4"/>
+        <xs:maxLength value="30"/>
+      </xs:restriction>
+     </xs:simpleType>
+</xs:element>
+
+  <xs:element name="combustible">
+   <xs:simpleType >
+    <xs:restriction base="xs:string">
+      <xs:pattern value=" Gasolina "/>
+      <xs:pattern value=" Diesel "/>
+    </xs:restriction> 
+  </xs:simpleType>
+</xs:element>
+  
+  <xs:element name="precio" type="xs:float"/>
+  
+  <xs:element name="nombre">
+   <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="([a-z A-Z]*)"/>
+        <xs:minLength value="4"/>
+        <xs:maxLength value="30"/>
+      </xs:restriction>
+     </xs:simpleType>
+</xs:element>
+  
+ <xs:element name="id">
+<xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+      <xs:maxInclusive value="1000"/>
+    </xs:restriction>
+</xs:simpleType>
+</xs:element>
+  
+  
+  <xs:element name="direccion">
+    <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="([a-z A-Z])*"/> 
+      <xs:minLength value="3"/>
+      <xs:maxLength value="45"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+  
+  <xs:element name="codigo_postal">
+  <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:pattern value="[0-9]{5}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  </xs:element>
+  
+<xs:element name="telefono">
+  <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:pattern value="[0-9]{9}"/> 
+    </xs:restriction>  
+  </xs:simpleType>
+</xs:element>
+  
+  <xs:element name="coche">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="marca"/>
+        <xs:element ref="modelo"/>
+        <xs:element ref="matricula"/>
+        <xs:element ref="combustible"/>
+        <xs:element ref="precio"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="coches">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="coche" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="concesionario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre"/>
+        <xs:element ref="id"/>
+        <xs:element ref="direccion"/>
+        <xs:element ref="codigo_postal"/>
+        <xs:element ref="telefono"/>
+        <xs:element ref="coches"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="concesionarios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="concesionario" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+</xs:schema>

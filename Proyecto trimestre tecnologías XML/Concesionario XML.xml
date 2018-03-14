@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Concesionario XSL.xsl"?>
+<concesionarios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Concesionario XSD.xsd">
+
+  <concesionario>
+    <nombre>FuerteVenta</nombre>
+    <id>123</id>
+    <direccion>C Playa Blanca</direccion>
+    <codigo_postal>35600</codigo_postal>
+    <telefono>928457512</telefono>
+    
+    <coches>
+    
+      <coche>
+        <marca>Renault</marca>
+        <modelo> Clio </modelo>
+        <matricula>1234 AAA</matricula>
+        <combustible> Diesel </combustible>
+        <precio>2000 </precio>
+      </coche>
+      
+      <coche>
+        <marca>Opel</marca>
+        <modelo> Corsa </modelo>
+        <matricula>5678 AAA</matricula>
+        <combustible> Gasolina </combustible>
+        <precio>2300 </precio>
+      </coche>
+      
+      <coche>
+        <marca>Seat</marca>
+        <modelo> Ibiza </modelo>
+        <matricula> 9123 ABA </matricula>
+        <combustible> Gasolina </combustible>
+        <precio> 2550 </precio>
+      </coche>
+      
+    </coches>
+    
+  </concesionario>
+  
+  <concesionario>
+    <nombre>VenFuer</nombre>
+    <id>105</id>
+    <direccion>C Faro Ingles</direccion>
+    <codigo_postal>35600</codigo_postal>
+    <telefono>928542631</telefono>
+    
+    <coches>
+    
+      <coche>
+        <marca>Opel</marca>
+        <modelo> Astra </modelo>
+        <matricula> 5678 CDF </matricula>
+        <combustible> Diesel </combustible>
+        <precio> 3500 </precio>
+      </coche>
+      
+      <coche>
+        <marca>Volkswagen</marca>
+        <modelo> Golf </modelo>
+        <matricula> 4856 DFG </matricula>
+        <combustible> Gasolina </combustible>
+        <precio> 2700 </precio>
+      </coche>
+      
+    </coches>
+    
+  </concesionario>
+  
+</concesionarios>
+
