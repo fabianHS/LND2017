@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adivina un color</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+<style>
+    h1{
+        text-align: center;
+    }
+    </style>
+    <script>
+        var color = ["blue", "green", "red","yellow"];
+        var numero = Math.floor(Math.random() * color.length);
+        var contador = 0;
+        var fin = true;
+        var eligecolor;
+        var colorConsola = color[numero];
+
+        function do_game() {
+
+            do {
+                eligecolor = prompt("Elige un color que se muestre a continuacion " + color);
+                contador++;
+                fin = check_guess();
+
+            } while (fin == true)
+
+        }
+
+        function check_guess() {
+
+            if (color.indexOf(eligecolor) == -1) {
+                alert("el color no existe");
+                return true;
+
+            }
+            if (eligecolor < colorConsola && color.indexOf(eligecolor) != -1) {
+                alert("Este no es el color. Es mayor.");
+                return true;
+            }
+            if (eligecolor > colorConsola && color.indexOf(eligecolor) != -1) {
+                alert("Este no es el color. Es menor.");
+                return true;
+            }
+
+
+            if (eligecolor == colorConsola) {
+                alert("Felicidades. Lo has intentado " + contador);
+                myBody = document.getElementsByTagName("body")[0];
+                myBody.style.background = eligecolor;
+                return false;
+            }
+
+
+        }
+
+    </script>
+
+
+</head>
+
+<body onload="do_game()">
+<h1>Adivina un color</h1>
+
+</body>
+
+</html>
