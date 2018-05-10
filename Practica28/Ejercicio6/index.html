@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Fabian Hernandez Stork -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Ejercicio 6</title>
+    <link rel="shortcut icon" type="image/png" href="https://fabianhs.github.io/LND2017/GitHub.png" />
+    <script type="text/javascript">
+        var numeroDni; // Crear una variable.
+        numeroDni = prompt("Numero del DNI"); // Guarda el dato en la variable numeroDNI
+
+
+        if (numeroDni < 0 || numeroDni > 99999999) // Compara el valor de numeroDNI. Si el valor es menor 0 o mayor a 99999999, el valor no es correcto 
+        {
+            alert("El numero proporcionado no es valido");
+        } else {
+
+            var letraDni;
+            letraDni = prompt("Letra del DNI (En Mayuscula)");
+
+            var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+
+            var letraCalc = letras[numeroDni % 23];
+            if (letraCalc != letraDni) {
+                alert("La letra o el numero no son correctos");
+            } else {
+                alert("El numero de DNI y su letra son correctos");
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
