@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 6</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" type="image/png" href="https://fabianhs.github.io/LND2017/GitHub.png" />
+</head>
+<body>
+	<script type="text/javascript">
+		var amigos = [];
+		var  fin = false;
+		var nombres;
+		
+
+		do{
+			
+			
+			nombres = prompt("Nombre de tus amigos: (para finalizar escribe fin)");
+			amigos.push(nombres);
+
+		if(nombres == "fin"){
+			fin = true;
+
+		}
+
+
+		}while(fin == false);
+
+
+		for(var i = 0; i < amigos.length -1; i++){
+			document.write(amigos[i] + ", ");
+		}
+			
+		
+	</script>
+</body>
+</html>

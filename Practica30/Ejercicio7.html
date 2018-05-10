@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 7</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" type="image/png" href="https://fabianhs.github.io/LND2017/GitHub.png" />
+</head>
+<body>
+    
+    <script>
+    
+        var bebidas = ["Fanta Naranja", "Clipper de fresa", "Coca Cola"];
+        
+        var contador = 0;
+        for(var i=0; i<bebidas.length; i++)
+            {
+           var r = confirm("Te gusta la "+bebidas[i]);
+            
+                
+               if (r == true) 
+                {
+                    contador++;
+                    document.write(bebidas[i]+"<br/>");
+                }
+                else{
+                    continue;
+                    }
+        }
+        document.write("Te gustan " + contador + " bebidas");
+
+    </script>
+
+</body>
+</html>
