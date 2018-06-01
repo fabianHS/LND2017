@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Practica 36</title>
+    <link rel="shortcut icon" type="image/png" href="https://fabianhs.github.io/LND2017/GitHub.png" />
+
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bootstrap-4.0.0/dist/css/bootstrap.min.css" />
+
+    <script src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class=" container navbar navbar-expand-lg navbar-dark bg-dark">
+            <img src="imagenes/android.png" style="width: 80px; padding-right: 10px " class="navbar-left">
+            <a class="navbar-brand text-success" href="index.html">Android</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Caracteristicas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina2.html">Dispositivos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formulario.html">Formulario</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+        <section>
+            <br>
+            <div class="container">
+                <h2>Caracteristicas</h2>
+                <p>Las caracteristicas de un sistema operativo es muy importante a la hora de elegirlo. <br> Android Es un sistema operativo que esta en continuo desarrollo. A continuacion vamos a ver una tablas con las diferentes verciones que tienen y la fecha de lanzamiento.
+                    <br>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Version</th>
+                                <th scope="col">Fecha Lanzamiento</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Apple Pie</td>
+                                <td>1.0</td>
+                                <td>23/09/2008</td>
+                            </tr>
+                            <tr>
+                                <td>Eclair</td>
+                                <td>2.0</td>
+                                <td>26/10/2009</td>
+                            </tr>
+                            <tr>
+                                <td>Honeycomb</td>
+                                <td>3.0</td>
+                                <td>22/02/2011</td>
+                            </tr>
+                            <tr>
+                                <td>Ice Cream Sandwich</td>
+                                <td>4.0</td>
+                                <td>18/10/2011</td>
+                            </tr>
+                            <tr>
+                                <td>Lollipop</td>
+                                <td>5.0</td>
+                                <td>12/11/2014</td>
+                            </tr>
+                            <tr>
+                                <td>Marshmallow</td>
+                                <td>6.0</td>
+                                <td>05/10/2015</td>
+                            </tr>
+                            <tr>
+                                <td>Marshmallow</td>
+                                <td>6.0</td>
+                                <td>15/06/2016</td>
+                            </tr>
+                            <tr>
+                                <td>Nougat</td>
+                                <td>7.0</td>
+                                <td>15/06/2015</td>
+                            </tr>
+                            <tr>
+                                <td>Oreo</td>
+                                <td>8.0</td>
+                                <td>21/08/2017</td>
+                            </tr>
+                            <tr>
+                                <td>P</td>
+                                <td>9.0</td>
+                                <td>Agosto de 2018</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <p>Aqui te vamos a contar las caracteristicas mas importantes: </p>
+                    <br>
+
+
+                    <div id="accordion">
+                        <div class="card" style="margin-top: 5px">
+                            <button class="btn btn-success" data-toggle="collapse" href="#collapseOne" style="text-align:left">
+       Diseño de dispositivos
+      </button>
+
+                            <div id="collapseOne" class="collapse show" data-parent="#accordion"><br>
+
+                                <div class="card-body">
+                                    <p class="card-text">La plataforma es adaptable a pantallas de mayor resolución, VGA, biblioteca de gráficos 2D, biblioteca de gráficos 3D basada en las especificaciones de la OpenGL ES 2.0 y diseño de teléfonos tradicionales..</p><br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="margin-top: 5px">
+                            <button class="btn btn-success" data-toggle="collapse" href="#collapseTwo" style="text-align:left">
+    Almacenamiento
+      </button>
+
+                            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    SQLite, una base de datos liviana, que es usada para propósitos de almacenamiento de datos.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card" style="margin-top: 5px">
+                            <button class="btn btn-success" data-toggle="collapse" href="#collapseThree" style="text-align:left">
+ Conectividad
+      </button>
+
+                            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    Android soporta las siguientes tecnologías de conectividad: GSM/EDGE, IDEN, CDMA, EV-DO, UMTS, Bluetooth, Wi-Fi, LTE, HSDPA, HSPA+, NFC y WiMAX, GPRS, UMTS y HSDPA+.
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card" style="margin-top: 5px">
+                            <button class="btn btn-success" data-toggle="collapse" href="#collapse4" style="text-align:left">
+Mensajeria
+      </button>
+
+                            <div id="collapse4" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    SMS y MMS son formas de mensajería, incluyendo mensajería de texto, además del servicio de Firebase Cloud Messaging (FCM) siendo la nueva versión de Google Cloud Messaging (GCM) bajo la marca Firebase con los nuevos SDK para realizar el desarrollo de mensajería en la nube mucho más sencillo.
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card" style="margin-top: 5px">
+                            <button class="btn btn-success" data-toggle="collapse" href="#collapse5" style="text-align:left">
+Navegador web
+      </button>
+
+                            <div id="collapse5" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    El navegador web incluido en Android está basado en el motor de renderizado de código abierto WebKit, emparejado con el motor JavaScript V8 de Google Chrome. El navegador por defecto de Ice Cream Sandwich obtiene una puntuación de 100/100 en el test Acid3
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card" style="margin-top: 5px">
+                            <button class="btn btn-success" data-toggle="collapse" href="#collapse6" style="text-align:left">
+Soporte de Java
+      </button>
+
+                            <div id="collapse6" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    Aunque la mayoría de las aplicaciones están escritas en Java, no hay una máquina virtual Java en la plataforma. El bytecode Java no es ejecutado, sino que primero se compila en un ejecutable Dalvik y se ejecuta en la Máquina Virtual Dalvik, Dalvik es una máquina virtual especializada, diseñada específicamente para Android y optimizada para dipositivos móviles que funcionan con batería y que tienen memoria y procesador limitados. A partir de la versión 5.0, se utiliza el Android Runtime (ART). El soporte para J2ME puede ser agregado mediante aplicaciones de terceros como el J2ME MIDP Runner..
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card" style="margin-top: 5px">
+                            <button class="btn btn-success" data-toggle="collapse" href="#collapse7" style="text-align:left">
+Soporte multimedia
+      </button>
+
+                            <div id="collapse7" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    Android soporta los siguientes formatos multimedia: WebM, H.263, H.264 (en 3GP o MP4), MPEG-4 SP, AMR, AMR-WB (en un contenedor 3GP), AAC, HE-AAC (en contenedores MP4 o 3GP), MP3, MIDI, Ogg Vorbis, WAV, JPEG, PNG, GIF y BMP.
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card" style="margin-top: 5px">
+                            <button class="btn btn-success" data-toggle="collapse" href="#collapse8" style="text-align:left">
+Soporte para streaming
+      </button>
+
+                            <div id="collapse8" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    Streaming RTP/RTSP (3GPP PSS, ISMA), descarga progresiva de HTML. Adobe Flash Streaming (RTMP) es soportado mediante el Adobe Flash Player. Se planea el soporte de Microsoft Smooth Streaming con el port de Silverlight a Android. Adobe Flash HTTP Dynamic Streaming estará disponible mediante una actualización de Adobe Flash Player.
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card" style="margin-top: 5px">
+                            <button class="btn btn-success" data-toggle="collapse" href="#collapse10" style="text-align:left">
+Soporte para hardware adicional
+      </button>
+
+                            <div id="collapse10" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    Android soporta cámaras de fotos, de vídeo, pantallas táctiles, GPS, acelerómetros, giroscopios, magnetómetros, sensores de proximidad y de presión, sensores de luz, gamepad, termómetro, aceleración por GPU 2D y 3D.
+                                </div>
+
+                            </div>
+
+                            <div class="card" style="margin-top: 5px">
+                                <button class="btn btn-success" data-toggle="collapse" href="#collapse11" style="text-align:left">
+Multi-táctil
+      </button>
+
+                                <div id="collapse11" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Android tiene soporte nativo para pantallas capacitivas con soporte multitáctil que inicialmente hicieron su aparición en dispositivos como el HTC Hero. La funcionalidad fue originalmente desactivada a nivel de kernel (posiblemente para evitar infringir patentes de otras compañías). Más tarde, Google publicó una actualización para el Nexus One y el Motorola Droid que activa el soporte multitáctil de forma nativa
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="card" style="margin-top: 5px">
+                                <button class="btn btn-success" data-toggle="collapse" href="#collapse12" style="text-align:left">
+Videollamada
+      </button>
+
+                                <div id="collapse12" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Android soporta videollamada a través de Hangouts (antiguo Google Talk) desde su versión HoneyComb.
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+            <br>
+        </section>
+        <footer class="bg-dark text-success" style="text-align: right"><br>
+            <div style="padding-right: 5px; padding-bottom:5px ">
+                <h6>Fabian Hernandez Stork
+                    <br></h6>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
