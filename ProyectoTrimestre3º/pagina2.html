@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Clientes</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="bootstrap-4.0.0/dist/css/bootstrap.min.css" />
+    <script src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Fin Bootstrap 4 -->
+
+    <link rel="shortcut icon" type="image/png" href="https://fabianhs.github.io/LND2017/GitHub.png" />
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fin Font-awesome -->
+    <script src="JavaScript/javascript.js"></script>
+
+</head>
+
+<body>
+    <!-- Barra de menu -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="pagina.html">
+      <i class="fa fa-deviantart" style="font-size:30px; margin-left: 10px; margin-right: 10px"></i>Mini-Gestor</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina1.html">Ventas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina3.html">Articulos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina4.html">Proveedores</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <!-- Fin Barra de menu -->
+
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Clientes</h3>
+                <p>Registro de los clientes.
+                </p>
+            </div>
+            <div class="col-sm-8">
+                <div class="card" style="margin-top: 5px">
+                    <button type="button" class="btn btn-block" data-toggle="collapse" href="#collapseOne">Insertar</button>
+                    <div id="collapseOne" class="collapse" data-parent="#accordion"><br>
+
+                        <div class="card-body">
+
+                            <div class="container">
+                                <form onsubmit="return validacion2()">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group row">
+                                                <label for="example-text-input" class="col-4 col-form-label">Nombre</label>
+                                                <div class="col-8">
+                                                    <input class="form-control" type="text" placeholder="Fabian" required id="nombre2">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="example-search-input" class="col-4 col-form-label">Apellidos</label>
+                                                <div class="col-8">
+                                                    <input class="form-control" type="text" placeholder="Hernandez Stork" required id="apellidos2">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="example-text-input" class="col-4 col-form-label">Numero DNI</label>
+                                                <div class="col-8">
+                                                    <input class="form-control" type="text" placeholder="78537798" required id="N_DNI2">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="example-text-input" class="col-4 col-form-label">Letra DNI</label>
+                                                <div class="col-8">
+                                                    <input class="form-control" type="text" placeholder="C " required id="L_DNI2">
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group row">
+                                                <label for="example-email-input" class="col-8 col-form-label">Codigo Postal</label>
+                                                <div class="col-4">
+                                                    <input class="form-control" type="postal" placeholder="35620" required id="codigoPostal2">
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="example-email-input" class="col-4 col-form-label">Email</label>
+                                                <div class="col-8">
+                                                    <input class="form-control" type="email" placeholder="bootstrap@example.com">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="example-tel-input" class="col-4 col-form-label">Telefono</label>
+                                                <div class="col-8">
+                                                    <input class="form-control" type="tel" placeholder="611111111" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col-4 col-form-label">Direcion</label>
+                                        <div class="col-8">
+                                            <input class="form-control" type="text" placeholder="Calle el Henequen 45" required>
+                                        </div>
+                                    </div>
+                                    <input type="submit" class="btn btn-block" src="pagina2.html" value="Añadir">
+                                </form>
+                            </div>
+
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr class="table-secondary">
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellidos</th>
+                        <th scope="col">DNI</th>
+                        <th scope="col">Direccion</th>
+                        <th scope="col">Codigo Postal</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>45125298S</td>
+                        <td>Calle León y Castillo</td>
+                        <td>35620</td>
+                        <td>Ottomark@gma.com</td>
+                        <td>621475892</td>
+                        <td><a href="#" class="text-muted"><i class="fa fa-cogs fa-2x" aria-hidden="true" style="margin-right:10px; "></i></a><a href="#" class="text-muted"><i class="fa fa-trash-o fa-2x" aria-hidden="true"></i></a></td>
+                    </tr>
+                    <tr>
+
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>12475869Q</td>
+                        <td> Calle Francisco Pi y Arsuaga</td>
+                        <td>35600</td>
+                        <td>JaThornton@yaho.com</td>
+                        <td>645218974</td>
+                        <td><a href="#" class="text-muted"><i class="fa fa-cogs fa-2x" aria-hidden="true"  style="margin-right:10px; " ></i></a><a href="#" class="text-muted"><i class="fa fa-trash-o fa-2x" aria-hidden="true" ></i></a></td>
+                    </tr>
+                    <tr>
+
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>45692314W</td>
+                        <td>Calle León y Castillo</td>
+                        <td>35600</td>
+                        <td></td>
+                        <td>678412035</td>
+                        <td><a href="#" class="text-muted"><i class="fa fa-cogs fa-2x" aria-hidden="true" style="margin-right:10px; "></i></a><a href="#" class="text-muted"><i class="fa fa-trash-o fa-2x" aria-hidden="true"></i></a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <br>
+        <button type="button" class="btn btn-secondary float-right" style="margin-right:20px; margin-bottom: 10px;" onclick="salir()">Cerrar Sesion</button>
+
+    </div>
+    <br>
+
+</body>
+
+</html>

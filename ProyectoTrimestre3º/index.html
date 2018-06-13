@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mini-Gestor</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="bootstrap-4.0.0/dist/css/bootstrap.min.css" />
+    <script src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Fin Bootstrap 4 -->
+
+    <link rel="shortcut icon" type="image/png" href="https://fabianhs.github.io/LND2017/GitHub.png" />
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fin Font-awesome -->
+
+</head>
+
+<body>
+    <script>
+        function go() {
+            if (document.form.password.value == 'root' && document.form.login.value == 'root@root.com') {
+                document.form.submit();
+            } else {
+                alert("Por favor ingrese, Un email y contraseña correctos.");
+            }
+        }
+
+    </script>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">
+            <i class="fa fa-deviantart" style="font-size:30px; margin-left: 10px; margin-right: 10px"></i>
+            
+        </a>
+    </nav>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>Mini-Gestor</h1>
+        <p>Es un mini gestor para organizar y gestionar <br>una base de datos.</p>
+    </div>
+
+
+    <div class="container">
+        <br>
+        <form name=form action="pagina.html">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" name="login" required>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Contraseña:</label>
+                <input type="password" class="form-control" name="password" required>
+            </div>
+            <INPUT onclick=go() class=btn type=button value=Acceder></INPUT>
+
+
+        </form>
+    </div>
+    <br>
+    <footer>
+        <div class="jumbotron text-center" style="margin-bottom:5px; padding-bottom:10px; ">
+            <p>Fabian Hernandez Stork</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

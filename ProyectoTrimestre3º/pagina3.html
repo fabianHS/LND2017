@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Articulos</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="bootstrap-4.0.0/dist/css/bootstrap.min.css" />
+    <script src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Fin Bootstrap 4 -->
+
+    <link rel="shortcut icon" type="image/png" href="https://fabianhs.github.io/LND2017/GitHub.png" />
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fin Font-awesome -->
+    <script src="JavaScript/javascript.js"></script>
+
+</head>
+
+<body>
+    <!-- Barra de menu -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="pagina.html">
+      <i class="fa fa-deviantart" style="font-size:30px; margin-left: 10px; margin-right: 10px"></i>Mini-Gestor</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina1.html">Ventas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina2.html">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Articulos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina4.html">Proveedores</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Fin Barra de menu -->
+
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Articulos</h3>
+                <p>Registro de los articulos.
+                </p>
+            </div>
+            <div class="col-sm-8">
+                <div class="card" style="margin-top: 5px">
+                    <button type="button" class="btn btn-block" data-toggle="collapse" href="#collapseOne">Insertar</button>
+                    <div id="collapseOne" class="collapse" data-parent="#accordion"><br>
+
+                        <div class="card-body">
+                            <div class="container">
+                                <form onsubmit="return validacion3()">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group row">
+                                                <label for="example-search-input" class="col-4 col-form-label">ID Articulo</label>
+                                                <div class="col-8">
+                                                    <input class="form-control" type="search" placeholder="002" required id="IDArticulo3">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="example-search-input" class="col-4 col-form-label">ID Proveedor</label>
+                                                <div class="col-8">
+                                                    <input class="form-control" type="search" placeholder="003" required id="IDProveedor3">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="example-text-input" class="col-4 col-form-label">Producto</label>
+                                                <div class="col-8">
+                                                    <input class="form-control" type="text" placeholder="Portatil" required id="pro3">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="example-text-input" class="col-4 col-form-label">Nombre</label>
+                                                <div class="col-8">
+                                                    <input class="form-control" type="text" placeholder="LG" required id="nombre3">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="example-text-input" class="col-4 col-form-label">Modelo</label>
+                                                <div class="col-8">
+                                                    <input class="form-control" type="text" placeholder="80L0" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="example-search-input" class="col-4 col-form-label">Descripcion</label>
+                                                <div class="col-8">
+                                                    <input class="form-control" type="text" placeholder="8GB Memoria Ram, 500GB Disco Duro" required id="Des3">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="example-url-input" class="col-4 col-form-label">Precio</label>
+                                                <div class="col-8">
+                                                    <input class="form-control" type="search" placeholder="200€" required id="pre3">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="submit" class="btn btn-block" src="pagina2.html" value="Añadir">
+                                </form>
+                            </div><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="table-responsive">
+
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr class="table-secondary">
+                        <th scope="col">ID</th>
+                        <th scope="col">ID Proveedor</th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Modelo</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">001</th>
+                        <td>001</td>
+                        <td>Monitor</td>
+                        <td>LG</td>
+                        <td>27BK750Y-B</td>
+                        <td>27 pulgadas Full HD IPS LED 16:9</td>
+                        <td>328,04€</td>
+                        <td><a href="#" class="text-muted"><i class="fa fa-cogs fa-2x" aria-hidden="true" style="margin-right:10px; "></i></a><a href="#" class="text-muted"><i class="fa fa-trash-o fa-2x" aria-hidden="true"></i></a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">002</th>
+                        <td>003</td>
+                        <td>Portatil</td>
+                        <td>Lenovo</td>
+                        <td>80L0</td>
+                        <td>4GB Ram, 500GB Disco Duro Intel i3</td>
+                        <td>300€</td>
+                        <td><a href="#" class="text-muted"><i class="fa fa-cogs fa-2x" aria-hidden="true" style="margin-right:10px; "></i></a><a href="#" class="text-muted"><i class="fa fa-trash-o fa-2x" aria-hidden="true"></i></a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">003</th>
+                        <td>002</td>
+                        <td>Sobremesa</td>
+                        <td>PcCom Basic</td>
+                        <td>45S9</td>
+                        <td>Intel Celeron, 500GB Disco Duro, 4GB Ram</td>
+                        <td>250€</td>
+                        <td><a href="#" class="text-muted"><i class="fa fa-cogs fa-2x" aria-hidden="true" style="margin-right:10px; "></i></a><a href="#" class="text-muted"><i class="fa fa-trash-o fa-2x" aria-hidden="true"></i></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <button type="button" class="btn btn-secondary float-right" style="margin-right:20px; margin-bottom: 10px;" onclick="salir()">Cerrar Sesion</button>
+    </div>
+    <br>
+</body>
+
+</html>
